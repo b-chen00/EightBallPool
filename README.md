@@ -1,6 +1,6 @@
 # EightBallPool
 
-# Description
+## Sumamry/Description
 **EightBallPool** is a game written in Java. Two players take turns and shoot the white ball (cue ball) at other pool balls and try to pocket their own types (striped of solid) of pool balls. The player can click on the cue ball and drag the mouse to different locations to set the speed and the direction of the cue ball. When a player pockets the cue ball, the other player gets a free ball and can right click to place the cue ball wherever on the pool table. After pocketing all of the assigned type of pool balls, pocket the 8ball (black ball) to win.
 
 # Rules
