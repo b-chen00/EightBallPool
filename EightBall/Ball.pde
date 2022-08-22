@@ -93,21 +93,6 @@ class Ball {
       speed.x *= -1;
       position.x = 923.3;
     }
-    /**
-    if ((position.x-10<=266.7 && position.y-10>=150 && position.y+10<=450) ||
-      (position.x+10>=933.3 && position.y-10>=150 && position.y+10<=450))
-      speed.x *= -1;
-    if ((position.y-10<=133.3 && position.x-10>=286.3 && position.x+10<=573.3) ||
-      (position.y-10<=133.3 && position.x-10>=613.3 && position.x+10<=913.3) ||
-      (position.y+10>=466.7 && position.x-10>=286.3 && position.x+10<=573.3) ||
-      (position.y+10>=466.7 && position.x-10>=613.3 && position.x+10<=913.3))
-      speed.y *= -1;
-
-    if (position.x - 10 <= 250 || position.x + 10 >= 950)
-      speed.x *= -1;
-    if (position.y - 10 <= 116.7 || position.y + 10 >= 483.3)
-      speed.y *= -1;
-    **/
     if (isSelected) {
       line(position.x, position.y, mouseX, mouseY);
     }
@@ -151,31 +136,8 @@ class Ball {
     this.speed.x *= 0.95;
     this.speed.y *= 0.95;
   }
-  /**
-   void collide(Ball other){
-   float distance = dist(this.position.x,this.position.y,other.position.x,other.position.y);
-   if (distance <= 20){
-   other.speed.x += this.speed.x;
-   other.speed.y += this.speed.y;
-   float angle = atan2(other.position.y - this.position.y, other.position.x - this.position.x);
-   this.position.x = other.position.x - cos(angle) * 20;
-   this.position.y = other.position.y - sin(angle) * 20;
-   this.speed.x *= -.85;
-   this.speed.y *= -.85;
-   }
-   }
-   **/
   //public void collide(Ball other) {
-  /*
-    float a = this.position.sub(other.position).heading();
-   this.position = other.position.add(this.polar(radius, a));
-   float a1 = this.speed.heading()-a;
-   float a2 = other.speed.heading()-a;
-   PVector v1 = this.polar(this.speed.mag()*cos(a1), a);
-   PVector v2 = this.polar(other.speed.mag()*cos(a2), a);
-   this.speed.sub(v1).add(v2);
-   other.speed.sub(v2).add(v1);
-   */
+ 
 
   /**
    //find a normal vector
