@@ -95,9 +95,7 @@ class Table {
   }
   
   void changeMoveable(boolean boo){
-   // if (!boo){
       whiteIsMoveable = boo;
-//}
   }
 
   void unPocket(int index) {
@@ -119,19 +117,6 @@ class Table {
   }
 
   void start() {
-    /**
-    for (int i = 0; i < onTable.length; i++) {
-      for (int j = i+1; j < onTable.length; j++) {
-        if (onTable[i] != null && onTable[j] != null) {
-          if (onTable[i].position.dist(onTable[j].position) <= onTable[i].radius)
-           float xDis = onTable[j].position.x - onTable[i].position.x;
-          float yDis = onTable[j].position.y - onTable[i].position.y;
-          float dist = sqrt(xDis * xDis + yDis * yDis);
-            onTable[i].collide(onTable[j]);
-        }
-      }
-    }
-    **/
     for (int i = 0; i < onTable.length; i++) {
       if (onTable[i] != null){
         onTable[i].move();
@@ -442,7 +427,6 @@ class Table {
         text("Stripes", 1000, 150);
       }
     }
-    //text("" + firstContactIndex, 500, 500);
     if (gameOver){
       textSize(100);
       fill(255,0,0);
